@@ -18,5 +18,8 @@ VER="groovy"
 # version 4
 ./gir-dl.sh https://packages.debian.org/experimental/amd64/libgtk-4-dev/download http.us.debian.org
 
+./gir-dl.sh https://packages.ubuntu.com/$VER/amd64/libgmime-3.0-dev/download
+
 ./reformat.sh
 ./fix.sh
+
