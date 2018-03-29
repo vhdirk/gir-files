@@ -137,7 +137,6 @@ xmlstarlet ed -P -L \
 	-u '//_:class[@name="WaylandSurface"]/_:method[@name="get_wl_surface"]//_:type[@name="gpointer"]/@c:type' -v "gpointer" \
 	GdkWayland-4.0.gir
 
-xmlstarlet ed -P \
-	-i '//*[@type="iconv_t"]' -t attr -n 'name' -v 'iconv_t' \
-	GMime-3.0.gir > tmp
-mv tmp GMime-3.0.gir
+xmlstarlet ed -P -L \
+	-i '//*[@c:type="iconv_t"]' -t attr -n 'name' -v 'iconv_t' \
+	GMime-3.0.gir

@@ -3964,7 +3964,7 @@ previous ones</doc>
         <doc xml:space="preserve">parent #GObject</doc>
         <type name="GObject.Object" c:type="GObject"/>
       </field>
-      <field name="priv" readable="0" private="1">
+      <field name="priv">
         <doc xml:space="preserve">private state data</doc>
         <type name="gpointer" c:type="_GMimeFilterPrivate*"/>
       </field>
@@ -4190,7 +4190,7 @@ not possible.</doc>
       </field>
       <field name="cd" introspectable="0">
         <doc xml:space="preserve">charset conversion state</doc>
-        <type name="gpointer" c:type="iconv_t"/>
+        <type c:type="iconv_t" name="iconv_t"/>
       </field>
     </class>
     <record name="FilterCharsetClass" c:type="GMimeFilterCharsetClass" glib:is-gtype-struct-for="FilterCharset">
@@ -4579,7 +4579,7 @@ remember to also use a #GMimeFilterBasic filter with an encoding of
         <doc xml:space="preserve">parent #GMimeFilter</doc>
         <type name="Filter" c:type="GMimeFilter"/>
       </field>
-      <field name="priv" readable="0" private="1">
+      <field name="priv">
         <doc xml:space="preserve">private state data</doc>
         <type name="gpointer" c:type="_GMimeFilterGZipPrivate*"/>
       </field>
@@ -9674,7 +9674,7 @@ or %-1 on error.</doc>
         <doc xml:space="preserve">parent #GObject</doc>
         <type name="GObject.Object" c:type="GObject"/>
       </field>
-      <field name="priv" readable="0" private="1">
+      <field name="priv">
         <doc xml:space="preserve">private parser state</doc>
         <type name="gpointer" c:type="_GMimeParserPrivate*"/>
       </field>
@@ -12406,7 +12406,7 @@ backend source stream when destroyed or %FALSE otherwise.</doc>
         <doc xml:space="preserve">parent #GMimeStream</doc>
         <type name="Stream" c:type="GMimeStream"/>
       </field>
-      <field name="priv" readable="0" private="1">
+      <field name="priv">
         <doc xml:space="preserve">private state data</doc>
         <type name="gpointer" c:type="_GMimeStreamFilterPrivate*"/>
       </field>
@@ -13733,7 +13733,7 @@ appropriate errno value.</doc>
       <parameters>
         <parameter name="cd" transfer-ownership="none">
           <doc xml:space="preserve">iconv conversion descriptor</doc>
-          <type name="gpointer" c:type="iconv_t"/>
+          <type c:type="iconv_t" name="iconv_t"/>
         </parameter>
       </parameters>
     </function>
@@ -13780,7 +13780,7 @@ See the manual page for iconv_open(3) for further details.</doc>
         <doc xml:space="preserve">a new conversion descriptor for use with g_mime_iconv() on
 success or (iconv_t) %-1 on fail as well as setting an appropriate
 errno value.</doc>
-        <type name="gpointer" c:type="iconv_t"/>
+        <type c:type="iconv_t" name="iconv_t"/>
       </return-value>
       <parameters>
         <parameter name="to" transfer-ownership="none">
@@ -13804,7 +13804,7 @@ converted to the new charset.</doc>
       <parameters>
         <parameter name="cd" transfer-ownership="none">
           <doc xml:space="preserve">conversion descriptor</doc>
-          <type name="gpointer" c:type="iconv_t"/>
+          <type c:type="iconv_t" name="iconv_t"/>
         </parameter>
         <parameter name="str" transfer-ownership="none">
           <doc xml:space="preserve">string in source charset</doc>
@@ -13825,7 +13825,7 @@ conversion descriptor @cd.</doc>
       <parameters>
         <parameter name="cd" transfer-ownership="none">
           <doc xml:space="preserve">conversion descriptor</doc>
-          <type name="gpointer" c:type="iconv_t"/>
+          <type c:type="iconv_t" name="iconv_t"/>
         </parameter>
         <parameter name="str" transfer-ownership="none">
           <doc xml:space="preserve">string in source charset</doc>
