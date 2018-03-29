@@ -38,4 +38,5 @@ mv tmp Gdk-3.0.gir
 
 xmlstarlet ed -P -L \
 	-i '//*[@c:type="iconv_t" and not(@name)]' -t attr -n 'name' -v 'gpointer' \
+	-i '//_:field[@name="priv" and not(@private)]' -t attr -n 'private' -v '1' \
 	GMime-3.0.gir

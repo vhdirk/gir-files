@@ -3964,7 +3964,7 @@ previous ones</doc>
         <doc xml:space="preserve">parent #GObject</doc>
         <type name="GObject.Object" c:type="GObject"/>
       </field>
-      <field name="priv">
+      <field name="priv" private="1">
         <doc xml:space="preserve">private state data</doc>
         <type name="gpointer" c:type="_GMimeFilterPrivate*"/>
       </field>
@@ -4579,7 +4579,7 @@ remember to also use a #GMimeFilterBasic filter with an encoding of
         <doc xml:space="preserve">parent #GMimeFilter</doc>
         <type name="Filter" c:type="GMimeFilter"/>
       </field>
-      <field name="priv">
+      <field name="priv" private="1">
         <doc xml:space="preserve">private state data</doc>
         <type name="gpointer" c:type="_GMimeFilterGZipPrivate*"/>
       </field>
@@ -9674,7 +9674,7 @@ or %-1 on error.</doc>
         <doc xml:space="preserve">parent #GObject</doc>
         <type name="GObject.Object" c:type="GObject"/>
       </field>
-      <field name="priv">
+      <field name="priv" private="1">
         <doc xml:space="preserve">private parser state</doc>
         <type name="gpointer" c:type="_GMimeParserPrivate*"/>
       </field>
@@ -12406,7 +12406,7 @@ backend source stream when destroyed or %FALSE otherwise.</doc>
         <doc xml:space="preserve">parent #GMimeStream</doc>
         <type name="Stream" c:type="GMimeStream"/>
       </field>
-      <field name="priv">
+      <field name="priv" private="1">
         <doc xml:space="preserve">private state data</doc>
         <type name="gpointer" c:type="_GMimeStreamFilterPrivate*"/>
       </field>
