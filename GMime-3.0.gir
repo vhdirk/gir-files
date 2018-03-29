@@ -4190,7 +4190,7 @@ not possible.</doc>
       </field>
       <field name="cd" introspectable="0">
         <doc xml:space="preserve">charset conversion state</doc>
-        <type c:type="iconv_t" name="iconv_t"/>
+        <type c:type="iconv_t" name="gpointer"/>
       </field>
     </class>
     <record name="FilterCharsetClass" c:type="GMimeFilterCharsetClass" glib:is-gtype-struct-for="FilterCharset">
@@ -13733,7 +13733,7 @@ appropriate errno value.</doc>
       <parameters>
         <parameter name="cd" transfer-ownership="none">
           <doc xml:space="preserve">iconv conversion descriptor</doc>
-          <type c:type="iconv_t" name="iconv_t"/>
+          <type c:type="iconv_t" name="gpointer"/>
         </parameter>
       </parameters>
     </function>
@@ -13780,7 +13780,7 @@ See the manual page for iconv_open(3) for further details.</doc>
         <doc xml:space="preserve">a new conversion descriptor for use with g_mime_iconv() on
 success or (iconv_t) %-1 on fail as well as setting an appropriate
 errno value.</doc>
-        <type c:type="iconv_t" name="iconv_t"/>
+        <type c:type="iconv_t" name="gpointer"/>
       </return-value>
       <parameters>
         <parameter name="to" transfer-ownership="none">
@@ -13804,7 +13804,7 @@ converted to the new charset.</doc>
       <parameters>
         <parameter name="cd" transfer-ownership="none">
           <doc xml:space="preserve">conversion descriptor</doc>
-          <type c:type="iconv_t" name="iconv_t"/>
+          <type c:type="iconv_t" name="gpointer"/>
         </parameter>
         <parameter name="str" transfer-ownership="none">
           <doc xml:space="preserve">string in source charset</doc>
@@ -13825,7 +13825,7 @@ conversion descriptor @cd.</doc>
       <parameters>
         <parameter name="cd" transfer-ownership="none">
           <doc xml:space="preserve">conversion descriptor</doc>
-          <type c:type="iconv_t" name="iconv_t"/>
+          <type c:type="iconv_t" name="gpointer"/>
         </parameter>
         <parameter name="str" transfer-ownership="none">
           <doc xml:space="preserve">string in source charset</doc>
