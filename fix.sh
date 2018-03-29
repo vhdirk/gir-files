@@ -36,7 +36,6 @@ xmlstarlet ed -P \
 	Gdk-3.0.gir > tmp
 mv tmp Gdk-3.0.gir
 
-xmlstarlet ed -P \
-	-i '//*[@type="iconv_t"]' -t attr -n 'name' -v 'iconv_t' \
-	GMime-3.0.gir > tmp
-mv tmp GMime-3.0.gir
+xmlstarlet ed -P -L \
+	-i '//*[@c:type="iconv_t"]' -t attr -n 'name' -v 'iconv_t' \
+	GMime-3.0.gir
