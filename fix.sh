@@ -138,5 +138,5 @@ xmlstarlet ed -P -L \
 	GdkWayland-4.0.gir
 
 xmlstarlet ed -P -L \
-	-i '//*[@c:type="iconv_t"]' -t attr -n 'name' -v 'iconv_t' \
+	-i '//*[@c:type="iconv_t" and not(@name)]' -t attr -n 'name' -v 'iconv_t' \
 	GMime-3.0.gir
